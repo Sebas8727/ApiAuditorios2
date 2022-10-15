@@ -45,7 +45,7 @@ public class Audience implements Serializable {
     private Category category;
     
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "audience")
-    @JsonIgnoreProperties({"audience"})
+    @JsonIgnoreProperties({"audience", "client"})
     private List <Message> messages;
     
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "audience")
