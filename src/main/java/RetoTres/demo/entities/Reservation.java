@@ -49,7 +49,7 @@ public class Reservation implements Serializable {
     @JsonIgnoreProperties({"messages", "reservations"})
     private Client client;
     
-    private String score="None";
+    private String score="";
     
     
     
